@@ -4,22 +4,24 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+ <link rel="stylesheet" href="style.css">
 <title>view-Details</title>
 </head>
 <body>
-	<h1>View Player Details</h1>
-	
-	<form action="viewplayer" method="post">
-		<table>
-				<tr>
-				<td>teamname:</td>
-				<td><input type="text" name="teamname"></td>
-			</tr>
-		
-			<tr><td><input type="submit" value="view-Player"/></td></tr>
-		</table>
-</form>
 
+<form action="viewplayer" method="post">
+  <div class="container">
+    <h1>View Player Record</h1>
+    <p>Plase provide the team name so you got data.</p>
+    <hr>
+
+    <label for="pid"><b>Team Name:</b></label>
+    <input type="text" placeholder="Enter team name" name="teamname" id="teamname" required>
+	<hr>
+	  <button type="submit" class="registerbtn">View</button>
+  </div>
+   </div>
+</form>
 
 </body>
 </html>

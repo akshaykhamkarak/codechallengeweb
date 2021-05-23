@@ -60,7 +60,7 @@ public class AddPlayer extends HttpServlet{
 		}
 		else {
 			out.print("  <div class=\"alert alert-danger\">\r\n"
-					+ "    <strong>Danger!</strong> Fail to insert data please provide valid .\r\n"
+					+ "    <strong>Danger!</strong> Fail to insert data please provide valid id .\r\n"
 					+ "  </div>");
 			request.getRequestDispatcher("index.jsp").include(request, response);
 		}

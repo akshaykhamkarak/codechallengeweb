@@ -10,6 +10,7 @@ public class ConnectionUtility {
 private static String URL="jdbc:mysql://localhost:3307/playerregistration";
 private static String USERNAME="root";
 private static String PASSWORD="Trishali@1999";
+
   public static Connection getConnection()throws ConnectionUtilityException{
 	  Connection con=null;
 	  try{
