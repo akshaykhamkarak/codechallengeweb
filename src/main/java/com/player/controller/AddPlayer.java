@@ -52,13 +52,19 @@ public class AddPlayer extends HttpServlet{
 			out.print(e.getMessage());
 		} 
 		if(result>0) {
-		out.print("Record Save success..");
+			
+		out.print("  <div class=\"alert alert-success\">\r\n"
+				+ "    <strong>Success!</strong> Insert operation is success.\r\n"
+				+ "  </div>");
 		request.getRequestDispatcher("index.jsp").include(request, response);
 		}
 		else {
-			out.print("Fail...");
+			out.print("  <div class=\"alert alert-danger\">\r\n"
+					+ "    <strong>Danger!</strong> Fail to insert data please provide valid .\r\n"
+					+ "  </div>");
+			request.getRequestDispatcher("index.jsp").include(request, response);
 		}
-		out.print(result);
+	
 		out.close();
 	}
 	
